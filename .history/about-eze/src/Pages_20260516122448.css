@@ -1,0 +1,139 @@
+a{
+    text-decoration: none;
+}
+
+/* Home Page Styling */
+
+.hero-container {
+  background-color: #050a18;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-overline {
+  color: #a855f7;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.hero-gradient-text {
+  background: linear-gradient(90deg, #a78bfa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.hero-button-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #a78bfa, #c084fc);
+  color: #050a18;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+
+/* The Jorney section inside the Home.jsx file */
+
+#the-story{
+     /* background-image: linear-gradient(to bottom, #100e12,rgb(39, 37, 37),#000000); */
+
+     background-image: linear-gradient(90deg, #a78bfa, #c084fc);
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1230px;
+        margin-inline: auto;
+        justify-content: space-between;
+        padding-inline: 80px;
+        padding-block: 40px;
+       .story-img{
+        max-width: 440px;
+        border: 15px solid rgba(0, 0, 0, 0.196);
+        border-radius: 5px;
+        img{
+            width: 100%;
+        }
+       }
+       .story-div{
+        max-width:420px;
+        h1{
+          font-size: 25px;
+          padding-block: 20px;
+            span{
+                color: #A3A6FF;
+            }
+        }
+        p{
+          line-height: 30px;
+          padding-bottom: 20px;
+        }
+       }
+       #ioe{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h3{
+          font-size: 30px;
+          font-weight: 700;
+        }
+       .hioe{
+        display: flex;
+        justify-content: space-between;
+       }
+       .pioe{
+        display: flex;
+        justify-content: space-between;
+        padding-block: 20px;
+       }
+       }
+    }
+}
+
+HOME Skill S

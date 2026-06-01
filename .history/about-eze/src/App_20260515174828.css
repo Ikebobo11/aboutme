@@ -1,0 +1,121 @@
+/* Navbar component */
+a{
+  text-decoration: none;
+}
+.header-main{
+  
+    margin-top: 30px;
+    margin-inline: 30px;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #060E20;
+    padding-inline: 40px;
+    padding-block: 20px 20px;
+    img{
+
+    }
+    nav{
+        display: flex;
+        gap: 50px;
+        font-family: "Playfair Display", serif;
+
+        a{
+            color: #DEE5FF;
+            opacity: 0.6;
+        }
+        .at1:hover{
+            color:white;
+            font-weight: 500;
+            opacity: 1;
+            font-family: "Poppins", sans-serif;
+        }
+    }
+}
+.hire{
+    background-color: #A3A6FF;
+    padding: 10px;
+    border-radius: 8px;
+    color: #0A0081;
+    &:hover{
+        background-color: #0A0081;
+        color:#A3A6FF ;
+    }
+}
+
+.header-section{
+    margin-block: 70px;
+    padding-inline: 40px;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #100e12,rgb(39, 37, 37),#000000);
+    margin-inline: auto;
+    h5{
+        color: #C180FF;
+        padding-block: 10px;
+    }
+    h1{
+        font-size: 50px;
+        max-width: 500px;
+    }
+    p{
+        max-width: 380px;
+        line-height: 20px;
+        padding-block: 15px;
+        opacity: 0.6;
+    }
+    span{
+       color: #C180FF;
+    }
+    div{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 250px;
+        margin-block: 15px;
+        a{
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .asec1{
+            background-color:#C180FF ;
+            color:black ;
+        }
+        .asec2{
+            background-color: rgb(41, 40, 40);
+            color: white;
+        }
+    }
+}
+
+/* menu buttons */
+ .allmenu{
+    display: none;
+} 
+
+#menu{
+    display: none;
+    width: 100%;
+}
+#close{
+    display: none;
+}
+/* media quary for all header */
+@media (max-width:626px) {
+    .hide-link{
+        a{
+            display: none;
+        }
+    }
+ 
+    .allmenu{
+    display: block;
+    }
+    #menu{
+        display: block;
+    }
+
+     #close{
+        display: none;
+     }   
+}

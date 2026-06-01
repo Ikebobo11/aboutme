@@ -1,0 +1,284 @@
+a{
+    text-decoration: none;
+}
+
+/* Home Page Styling */
+
+.hero-container {
+  background-color: #050a18;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.hero-content {
+  max-width: 800px;
+}
+
+.hero-overline {
+  color: #a855f7;
+  letter-spacing: 0.2rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-size: 4.5rem;
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.hero-gradient-text {
+  background: linear-gradient(90deg, #a78bfa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #94a3b8;
+  margin-bottom: 3rem;
+  max-width: 600px;
+}
+
+.hero-button-group {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #a78bfa, #c084fc);
+  color: #050a18;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+
+/* The Jorney section inside the Home.jsx file */
+
+#the-story{
+     /* background-image: linear-gradient(to bottom, #100e12,rgb(39, 37, 37),#000000); */
+
+     background-image: linear-gradient(90deg, #a78bfa, #c084fc);
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1230px;
+        margin-inline: auto;
+        justify-content: space-between;
+        padding-inline: 80px;
+        padding-block: 40px;
+       .story-img{
+        max-width: 440px;
+        border: 15px solid rgba(0, 0, 0, 0.196);
+        border-radius: 5px;
+        img{
+            width: 100%;
+        }
+       }
+       .story-div{
+        max-width:420px;
+        h1{
+          font-size: 25px;
+          padding-block: 20px;
+            span{
+                color: #A3A6FF;
+            }
+        }
+        p{
+          line-height: 30px;
+          padding-bottom: 20px;
+        }
+       }
+       #ioe{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h3{
+          font-size: 30px;
+          font-weight: 700;
+        }
+       .hioe{
+        display: flex;
+        justify-content: space-between;
+       }
+       .pioe{
+        display: flex;
+        justify-content: space-between;
+        padding-block: 20px;
+       }
+       }
+    }
+}
+
+/* HOME Skill Section */
+
+.skills-container {
+  background-color: #050a18; /* Matches the deep navy hero background */
+  padding: 6rem 10%;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.skills-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 4rem;
+}
+
+.skills-main-title {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.skills-gradient-text {
+  background: linear-gradient(90deg, #a78bfa, #c084fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-overline {
+  color: #64748b; /* Muted typography tone */
+  letter-spacing: 0.15rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+/* Layout Grid for the two large cards */
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.skills-card {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 3rem;
+}
+
+.card-title-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.card-title-row h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* SVG Icon Configurations */
+.card-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-purple-light {
+  color: #a78bfa;
+}
+
+.icon-purple-dark {
+  color: #c084fc;
+}
+
+/* Skill Rows and Custom Progress Bars */
+.skills-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.75rem;
+}
+
+.skill-name {
+  color: #94a3b8; /* Balanced slate for readability */
+}
+
+.skill-percentage {
+  color: #a78bfa;
+}
+
+.progress-bar-bg {
+  width: 100%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 1s ease-in-out;
+}
+
+/* Matching the gradient shift between the cards */
+.fill-purple-light {
+  background: #a78bfa;
+}
+
+.fill-purple-dark {
+  background: #c084fc;
+}
+
+/* Responsive breakpoint for smaller displays */
+@media (max-width: 968px) {
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .skills-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .skills-container {
+    padding: 4rem 5%;
+  }
+}
+
+
+Skill
